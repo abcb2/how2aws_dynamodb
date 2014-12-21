@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>kj.aws.dynamodb</groupId>
-  <artifactId>app</artifactId>
+  <artifactId>how2aws_dynamodb</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
@@ -14,7 +14,46 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <build>
+    <plugins>
+      <plugin>
+         <artifactId>maven-assembly-plugin</artifactId>
+         <configuration>
+            <descriptorRefs>
+              <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>
+            <archive>
+              <manifest>
+                <mainClass>kj.aws.dynamodb.App</mainClass>
+              </manifest>
+              <manifestEntries>
+                <Class-Path>.</Class-Path>
+              </manifestEntries>
+            </archive>
+         </configuration>
+         <executions>
+           <execution>
+             <id>make-assembly</id>
+             <phase>package</phase>
+             <goals>
+               <goal>single</goal>
+             </goals>
+           </execution>
+         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2.1</version>
+      </plugin>
+    </plugins>
+  </build>
   <dependencies>
+    <dependency>
+      <groupId>com.amazonaws</groupId>
+      <artifactId>aws-java-sdk</artifactId>
+      <version>1.9.13</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
