@@ -61,8 +61,13 @@ public class App{
 		if(execMode.equals("list-tables")){
 			ListTables klass = new ListTables();
 			klass.execute(client, otherOpts);
-		}else if(execMode.equals("delete-table")){
+		}
+		else if(execMode.equals("delete-table")){
 			DeleteTables klass = new DeleteTables();
+			klass.execute(client, otherOpts);
+		}
+		else if(execMode.equals("create-table")){
+			CreateTable klass = new CreateTable();
 			klass.execute(client, otherOpts);
 		}
 		else {
