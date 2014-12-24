@@ -1,0 +1,12 @@
+{
+    "TableName": "Reply", 
+    "Item": {
+        "Id": {
+            "S": "Dynamodb#create-table"
+        },
+        "ReplyDateTime": {
+            "S": "2014-12-25 10:00:00"
+        }
+    }, 
+    "ReturnValues": "ALL_OLD"
+}

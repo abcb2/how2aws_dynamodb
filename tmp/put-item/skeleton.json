@@ -1,0 +1,111 @@
+{
+    "TableName": "", 
+    "Item": {
+        "KeyName": {
+            "S": "", 
+            "N": "", 
+            "B": null, 
+            "SS": [
+                ""
+            ], 
+            "NS": [
+                ""
+            ], 
+            "BS": [
+                null
+            ], 
+            "M": {
+                "KeyName": {}
+            }, 
+            "L": [
+                {}
+            ], 
+            "NULL": true, 
+            "BOOL": true
+        }
+    }, 
+    "Expected": {
+        "KeyName": {
+            "Value": {
+                "S": "", 
+                "N": "", 
+                "B": null, 
+                "SS": [
+                    ""
+                ], 
+                "NS": [
+                    ""
+                ], 
+                "BS": [
+                    null
+                ], 
+                "M": {
+                    "KeyName": {}
+                }, 
+                "L": [
+                    {}
+                ], 
+                "NULL": true, 
+                "BOOL": true
+            }, 
+            "Exists": true, 
+            "ComparisonOperator": "", 
+            "AttributeValueList": [
+                {
+                    "S": "", 
+                    "N": "", 
+                    "B": null, 
+                    "SS": [
+                        ""
+                    ], 
+                    "NS": [
+                        ""
+                    ], 
+                    "BS": [
+                        null
+                    ], 
+                    "M": {
+                        "KeyName": {}
+                    }, 
+                    "L": [
+                        {}
+                    ], 
+                    "NULL": true, 
+                    "BOOL": true
+                }
+            ]
+        }
+    }, 
+    "ReturnValues": "", 
+    "ReturnConsumedCapacity": "", 
+    "ReturnItemCollectionMetrics": "", 
+    "ConditionalOperator": "", 
+    "ConditionExpression": "", 
+    "ExpressionAttributeNames": {
+        "KeyName": ""
+    }, 
+    "ExpressionAttributeValues": {
+        "KeyName": {
+            "S": "", 
+            "N": "", 
+            "B": null, 
+            "SS": [
+                ""
+            ], 
+            "NS": [
+                ""
+            ], 
+            "BS": [
+                null
+            ], 
+            "M": {
+                "KeyName": {}
+            }, 
+            "L": [
+                {}
+            ], 
+            "NULL": true, 
+            "BOOL": true
+        }
+    }
+}
