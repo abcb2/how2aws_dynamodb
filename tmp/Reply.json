@@ -1,0 +1,49 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "Id", 
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "PostedBy", 
+            "AttributeType": "S"
+        },
+        {
+            "AttributeName": "ReplyDateTime", 
+            "AttributeType": "S"
+        }
+    ], 
+    "TableName": "Reply", 
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "Id"
+        },
+        {
+            "KeyType": "RANGE",
+            "AttributeName": "ReplyDateTime"
+        }
+    ], 
+    "LocalSecondaryIndexes": [
+        {
+            "IndexName": "PostedByIndex", 
+            "KeySchema": [
+                {
+                    "KeyType": "HASH",
+                    "AttributeName": "Id"
+                },
+                {
+                    "KeyType": "RANGE",
+                    "AttributeName": "PostedBy"
+                }
+            ], 
+            "Projection": {
+                "ProjectionType": "KEYS_ONLY"
+            }
+        }
+    ], 
+    "ProvisionedThroughput": {
+        "ReadCapacityUnits": 1, 
+        "WriteCapacityUnits": 1
+    }
+}
